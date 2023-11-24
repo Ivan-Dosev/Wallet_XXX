@@ -14,6 +14,7 @@
 		6E4F0EF12B0FE55B00AE83F6 /* Wallet_XXXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F0EF02B0FE55B00AE83F6 /* Wallet_XXXTests.swift */; };
 		6E4F0EFB2B0FE55B00AE83F6 /* Wallet_XXXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F0EFA2B0FE55B00AE83F6 /* Wallet_XXXUITests.swift */; };
 		6E4F0EFD2B0FE55B00AE83F6 /* Wallet_XXXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F0EFC2B0FE55B00AE83F6 /* Wallet_XXXUITestsLaunchTests.swift */; };
+		6E4F0F0B2B0FE65A00AE83F6 /* WalletConnectV2SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4F0F0A2B0FE65A00AE83F6 /* WalletConnectV2SwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4F0F0B2B0FE65A00AE83F6 /* WalletConnectV2SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = Wallet_XXX;
+			packageProductDependencies = (
+				6E4F0F0A2B0FE65A00AE83F6 /* WalletConnectV2SwiftUI */,
+			);
 			productName = Wallet_XXX;
 			productReference = 6E4F0EDB2B0FE55A00AE83F6 /* Wallet_XXX.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 6E4F0ED22B0FE55A00AE83F6;
+			packageReferences = (
+				6E4F0F092B0FE65A00AE83F6 /* XCRemoteSwiftPackageReference "WalletConnectV2SwiftUI" */,
+			);
 			productRefGroup = 6E4F0EDC2B0FE55A00AE83F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -429,7 +437,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -467,7 +475,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -612,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E4F0F092B0FE65A00AE83F6 /* XCRemoteSwiftPackageReference "WalletConnectV2SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AakifNadeem/WalletConnectV2SwiftUI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E4F0F0A2B0FE65A00AE83F6 /* WalletConnectV2SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E4F0F092B0FE65A00AE83F6 /* XCRemoteSwiftPackageReference "WalletConnectV2SwiftUI" */;
+			productName = WalletConnectV2SwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6E4F0ED32B0FE55A00AE83F6 /* Project object */;
 }
